@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Dünya Mutfakları</title>
+  <style>
+    body {
+      background-color: #fdf6e3;
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 40px;
+      line-height: 1.8;
+    }
+
+    .tour-title {
+      font-size: 30px;
+      color: #e74c3c;
+      text-shadow: 1px 1px 2px #999;
+      margin-top: 40px;
+    }
+
+    h1 {
+      color: #c0392b;
+      font-size: 32px;
+    }
+
+    h2 {
+      color: #2c3e50;
+      font-size: 24px;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    img.map {
+      margin-top: 50px;
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Dünya Mutfakları: Kültürlerin Sofraya Yansıması</h1>
+
+  <p>Yemek, sadece karın doyurmak değil; bir toplumun tarihini, geleneklerini ve yaşam tarzını yansıtan bir kültür unsurudur. Dünya mutfakları, coğrafi konum, iklim, tarihsel etkileşimler ve dini inanışlar gibi birçok faktörle şekillenmiştir. Aşağıda, bazı kültürlerin mutfak özelliklerine yakından bakabilirsiniz.</p>
+
+  <h2>Akdeniz Mutfağı</h2>
+  <p>Akdeniz mutfağı; Türkiye, Yunanistan, İtalya, İspanya gibi ülkelerde görülür. Zeytinyağı, taze sebzeler, balık ve tahıllar bu mutfağın temelidir. Sağlıklı yaşam ile ilişkilendirilir. İtalyan mutfağı makarna ve pizza ile ünlüyken, Türk mutfağı kebaplar, zeytinyağlılar ve tatlılarla ön plana çıkar.</p>
+
+  <h2>Asya Mutfağı</h2>
+  <p>Asya kıtası çok geniş olduğu için mutfak kültürü de çeşitlidir. Çin mutfağında wok ile hızlı pişirme, soya sosu ve pirinç ön plandayken, Japonya'da minimalizm, deniz ürünleri ve çiğ tüketim yaygındır. Hindistan mutfağı ise baharat zenginliği ve vejetaryen yemekleriyle dikkat çeker.</p>
+
+  <h2>Latin Amerika Mutfağı</h2>
+  <p>Meksika, Peru, Arjantin gibi ülkelerde görülen bu mutfak, mısır, fasulye, et ve acı biber üzerine kuruludur. Meksika mutfağı tacos, enchiladas ve guacamole gibi lezzetlerle tüm dünyada tanınır. Ayrıca yerel mutfaklar İspanyol etkisiyle harmanlanmıştır.</p>
+
+  <h2>Avrupa Mutfağı</h2>
+  <p>Fransa, Almanya, İngiltere gibi ülkelerin mutfakları klasikleşmiş yemek teknikleri ve zengin tatlarla bilinir. Fransız mutfağı dünya gastronomisine yön vermiştir: soslar, peynirler ve şarap eşleşmeleri meşhurdur. Her ülkenin kendine özgü tatları vardır.</p>
+
+  <h2>Uzak Doğu Felsefesiyle Beslenme</h2>
+  <p>Japon mutfağı yalnızca lezzetle değil sunumla da ilgilidir. Estetik önemlidir. Yemeğin dengesi, rengi ve doğaya saygı felsefeye dayanır. Fermente gıdalar ve sade pişirme teknikleri sağlık açısından faydalı görülür.</p>
+
+  <h2 class="tour-title">Dünya Turu Başlasın!</h2>
+  <p>Aşağıdaki bayraklar üzerinden ülkelerin mutfaklarına göz atabilirsiniz:</p>
+
+  <img src="gorsel/flag-map.png" usemap="#image-map" alt="Dünya Haritası">
+
+<map name="image-map">
+  <!-- Türkiye -->
+  <area shape="rect" coords="2,0,142,499" href="sayfalar/turkiye.html" alt="Türkiye" title="Türkiye">
+
+  <!-- İtalya -->
+  <area shape="rect" coords="144,1,284,499" href="sayfalar/italya.html" alt="İtalya" title="İtalya">
+
+  <!-- Japonya -->
+  <area shape="rect" coords="287,-1,427,499" href="sayfalar/japonya.html" alt="Japonya" title="Japonya">
+
+  <!-- Meksika -->
+  <area shape="rect" coords="429,3,568,499" href="sayfalar/meksika.html" alt="Meksika" title="Meksika">
+
+  <!-- Fransa -->
+  <area shape="rect" coords="570,-1,713,499" href="sayfalar/fransa.html" alt="Fransa" title="Fransa">
+
+  <!-- Hindistan -->
+  <area shape="rect" coords="716,-1,854,499" href="sayfalar/hindistan.html" alt="Hindistan" title="Hindistan">
+
+  <!-- Çin -->
+  <area shape="rect" coords="859,1,998,499" href="sayfalar/cin.html" alt="Çin" title="Çin">
+</map>
+
+<p style="font-size: 18px; margin-bottom: 10px;">Yeni tariflerden ve dünya mutfaklarından haberdar olmak için bültenimize kayıt olun!</p>
+
+<form onsubmit="gonder()" style="margin-top: 20px;">
+  <input type="text" id="subscriberName" placeholder="Ad Soyad" required
+         style="padding: 10px; width: 250px; border: 1px solid #ccc; border-radius: 5px; margin-bottom: 10px;"><br>
+
+  <input type="email" id="subscriberEmail" placeholder="E-posta adresiniz" required
+         style="padding: 10px; width: 250px; border: 1px solid #ccc; border-radius: 5px;"><br>
+
+  <button type="submit"
+          style="padding: 10px 15px; background-color: #e67e22; color: white; border: none; border-radius: 5px; margin-top: 10px;">
+    Kayıt Ol
+  </button>
+</form>
+
+<script>
+  function gonder() {
+    event.preventDefault();
+    var ad = document.getElementById('subscriberName').value.trim();
+    var email = document.getElementById('subscriberEmail').value.trim();
+
+    if (ad !== "" && email.includes("@")) {
+      alert("Başarılı!");
+      
+    } else {
+      alert("Lütfen tüm bilgileri doğru şekilde giriniz.");
+    }
+  }
+</script>
+
+         
+
+</body>
+</html>
