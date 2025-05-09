@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+<footer class="footer">
+  <p id="footer-text">&copy; 2025 Dünya Mutfakları - Tüm Hakları Saklıdır.</p>
+</footer>
+
+<script>
+  // Oturum bilgisini al
+  const username = localStorage.getItem("username");
+
+  // Eğer oturum varsa ekrana yazdır
+  if (username) {
+    const footerText = document.getElementById("footer-text");
+    footerText.innerHTML = `&copy; 2025 Dünya Mutfakları - Tüm Hakları Saklıdır. / Oturumunuz açık: <span class="username">@${username}</span>`;
+  }
+</script>
+
+</body>
+</html>
